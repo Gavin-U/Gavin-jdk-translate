@@ -45,21 +45,14 @@ public final class String
         new ObjectStreamField[0];
 
     /**
-     * Initializes a newly created {@code String} object so that it represents
-     * an empty character sequence.  Note that use of this constructor is
-     * unnecessary since Strings are immutable.
+          * 这是string的构造函数初始化一个空字符串,是不可变的
      */
     public String() {
         this.value = "".value;
     }
 
     /**
-     * Initializes a newly created {@code String} object so that it represents
-     * the same sequence of characters as the argument; in other words, the
-     * newly created string is a copy of the argument string. Unless an
-     * explicit copy of {@code original} is needed, use of this constructor is
-     * unnecessary since Strings are immutable.
-     *
+          *  构造方法    传入字符串计算出hash值 赋值给成员变量
      * @param  original
      *         A {@code String}
      */
